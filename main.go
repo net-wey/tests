@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	http.HandleFunc("/hello", func(w http.ResponseWriter, r *http.Request) {
+	http.HandleFunc("/api/hello", func(w http.ResponseWriter, r *http.Request) {
 		HealthCheckHandler(w, r)
 	})
 
